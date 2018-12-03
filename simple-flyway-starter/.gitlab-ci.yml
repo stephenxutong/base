@@ -1,0 +1,19 @@
+stages:
+  - build
+
+snapshots:
+  stage: build
+  image: docker-lh.fpi-inc.site/fpi/maven:3.5.4-local
+  script:
+  - mvn deploy
+  only:
+  - master
+  
+releases:
+  stage: build
+  image: docker-lh.fpi-inc.site/fpi/maven:3.5.4-local
+  script:
+  - mvn versions:set -DnewVersion=$CI_COMMIT_TAG
+  - mvn deploy
+  only:
+  - tags

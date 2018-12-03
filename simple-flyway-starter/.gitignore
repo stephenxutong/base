@@ -1,0 +1,70 @@
+# Linux
+# backup files
+*~
+
+# Windows
+# thumbnails
+Thumbs.db
+
+# Mac OS X
+# metadata
+.DS_Store
+# thumbnails
+._*
+
+# Java
+*.class
+
+target/
+build/
+bin/
+
+!.mvn/wrapper/maven-wrapper.jar
+
+# packages 
+*.jar
+*.war
+*.ear
+
+# Eclipse
+.settings/
+.buildpath
+.classpath
+.project
+.metadata
+.springBeans
+
+# Idea
+.idea
+*.iml
+*.ipr
+*.iws
+out
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# STS
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# Log
+*.log
+
+# Others
+activemq-data
+*.sw?
+.gradle
+.#*
+*#
+.recommenders
